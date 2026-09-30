@@ -1,0 +1,23 @@
+# Cline / Roo Code Rules: Anti-AI Slop Craft Standards
+
+When generating, styling, or refactoring web interfaces, components, and CSS:
+
+[CONSTRAINTS]
+- One accent colour only (<10% surface). One consistent neutral grey temperature.
+- Zero blue→purple or indigo→violet gradients anywhere (backgrounds, buttons, text, blobs).
+- No gradient text (`background-clip: text`). Headings are solid.
+- No drop-shadows on cards, containers, inputs, or static buttons.
+- Shadows allowed ONLY on floating overlays (modals, dropdowns, toasts) with tight geometry: `0 1px 2px rgba(0,0,0,0.06)`.
+- No sparkle icons (`✨`, `✦`, `🪄`) and no emoji in UI buttons/headings (no 🚀, ⚡, 🔥).
+- No tinted rounded square containers behind icons. Icons sit naked on background at text size.
+- One icon set (Lucide/Heroicons) monochrome inheriting currentColor.
+- Banned buzzwords: unleash, supercharge, elevate, transform, revolutionise, empower, seamless, effortless, cutting-edge, game-changing, next-level, unlock, harness, robust, leverage, powerful.
+- No em dash (—) in UI copy.
+- Scale: 12 / 14 / 16 / 20 / 24 / 32 / 48px. Hero 40-56px desktop (never 72px+).
+- Motion: Hover changes background/border only (120-160ms ease-out). No hover glow, halo, or card lifting.
+- Semantic HTML tags (<header>, <nav>, <main>, <section>, <button>, <a>). Never clickable divs.
+- Real :focus-visible outlines. Contrast >= 4.5:1.
+- CSS Logical Properties for RTL (Arabic, Hebrew) and LTR.
+
+[CHECKLIST]
+Audit every UI output: if a reviewer could detect AI generation in under 5 seconds, find the telltale and replace it with human craftsmanship.

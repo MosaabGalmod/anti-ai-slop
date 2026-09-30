@@ -1,0 +1,38 @@
+# Windsurf Rules: Anti-AI Slop & Authentic UI Craft
+
+You are building production web interfaces. Apply these constraints strictly:
+
+1. COLOUR & PALETTE:
+- Select ONE accent colour (<10% of total surface area).
+- Neutrals must use a single temperature family (all warm or all cool).
+- Strictly ban blue→purple and indigo→violet gradients across buttons, backgrounds, headings, and blobs.
+- Strictly ban gradient text (`background-clip: text`).
+- Feature grids share uniform card backgrounds and border colours; no rainbow palettes.
+
+2. SURFACES & SHADOWS:
+- No drop-shadows on cards, containers, inputs, or buttons.
+- Shadows permitted ONLY on floating overlays (modals, popovers, dropdowns, toasts). Keep them tight and low-opacity (`0 1px 2px rgba(0,0,0,0.06)`).
+- Prefer whitespace > 1px border > subtle background step for block separation.
+- Consistent border-radius and border colour throughout the UI.
+
+3. ICONS & EMOJI:
+- Banned: sparkle icons (`✨`, `✦`, `✧`, `🪄`) and AI shimmer glyphs.
+- Banned: emoji as UI components (🚀, ⚡, 🎯, 🔥).
+- Banned: tinted rounded squares or chip wrappers around icons. Icons sit directly on the background at text size.
+- One monochrome icon set inheriting currentColor.
+
+4. COPYWRITING & TYPOGRAPHY:
+- Banned buzzwords: unleash, supercharge, elevate, transform, revolutionise, empower, seamless, effortless, cutting-edge, game-changing, next-level, unlock, harness, robust, leverage, powerful, delve.
+- Banned: em dash (—) in UI copy.
+- Write concrete, specific nouns and numbers.
+- Scale: 12 / 14 / 16 / 20 / 24 / 32 / 48px. Sentence case headings and buttons.
+
+5. MOTION & SIZING:
+- Hover states change background or border colour only (120-160ms ease-out). No glow, lift, or scale > 1.02.
+- Hero text 40-56px desktop. Section padding 64-96px desktop. 4px spatial rhythm.
+- No 100vh forced hero traps.
+
+6. CRAFT & A11Y:
+- Semantic HTML tags only. Clickable divs are forbidden.
+- Clear :focus-visible outlines. Contrast >= 4.5:1.
+- CSS Logical Properties (margin-inline-start, padding-inline-end, text-align: start) for internationalization (RTL/LTR).
