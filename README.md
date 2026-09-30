@@ -88,12 +88,25 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MosaabGalmod/anti-ai-s
 
 ### 2. Claude Code
 Install as a personal skill:
+
+#### Windows (PowerShell):
+```powershell
+New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills\anti-ai-slop"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MosaabGalmod/anti-ai-slop/main/SKILL.md" -OutFile "$HOME\.claude\skills\anti-ai-slop\SKILL.md"
+```
+
+#### macOS / Linux (Bash):
 ```bash
 mkdir -p ~/.claude/skills/anti-ai-slop
 curl -sSL https://raw.githubusercontent.com/MosaabGalmod/anti-ai-slop/main/SKILL.md -o ~/.claude/skills/anti-ai-slop/SKILL.md
 ```
-Or append to your global `~/.claude/CLAUDE.md`:
-```bash
+
+Or append to your global `CLAUDE.md`:
+```powershell
+# Windows:
+Add-Content -Path "$HOME\.claude\CLAUDE.md" -Value (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MosaabGalmod/anti-ai-slop/main/DESIGN_RULES.md").Content
+
+# macOS / Linux:
 curl -sSL https://raw.githubusercontent.com/MosaabGalmod/anti-ai-slop/main/DESIGN_RULES.md >> ~/.claude/CLAUDE.md
 ```
 
