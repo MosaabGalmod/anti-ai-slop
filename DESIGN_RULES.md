@@ -96,6 +96,7 @@ Nothing is oversized. Everything is sized to its content and fits neatly. Inflat
 - Reuse components instead of pasting a block with different text. If the same markup appears three times, extract it.
 - Use design tokens or theme values, not one-off arbitrary values scattered per element.
 - No dead code, no commented-out blocks, no unused imports, no placeholder TODOs in a delivered file.
+- **Banned native blocking alerts:** `window.alert()`, `window.confirm()`, `window.prompt()`, and browser default `required` popups are strictly banned. Use non-blocking accessible custom toast notifications and real-time inline validation with `aria-describedby` and `novalidate`.
 - RTL / Internationalization: use CSS Logical Properties (`margin-inline-start`, `padding-inline-end`, `inset-inline-start`, `text-align: start`) to support multi-language layouts naturally.
 
 ---
@@ -116,5 +117,6 @@ Before declaring any UI finished, go through every line:
 12. Is there a badge above the hero that says nothing?
 13. Is the hero headline above 56px, or any section over 96px of vertical padding?
 14. Does any element look oversized next to the text beside it?
+15. Is `window.alert()`, `window.confirm()`, or a browser default `required` popup used anywhere?
 
 If a reviewer could tell this was generated in under five seconds, find the specific thing that gave it away and fix that.
