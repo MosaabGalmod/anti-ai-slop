@@ -4,6 +4,9 @@
 When writing HTML, JSX, Vue, Svelte, CSS, or Tailwind markup:
 
 1. **Colour Tokens**:
+   - Follow 60-30-10 distribution: ~60% dominant neutral surface, ~30% structural brand colour, ~10% single accent (only accent may be bright/saturated).
+   - Brand (30%) and accent (10%) are the only non-semantic chromatic hues; secondary hues strictly semantic (error, success, warning).
+   - Use accent as a fill with dark text (never low-contrast body text); one primary CTA per view. In dark theme, re-derive tokens with same proportions.
    - Limit accent colour to ONE primary accent, keeping surface usage under 10%.
    - Strictly prohibit blue→purple and indigo→violet gradients anywhere.
    - Prohibit gradient text (`background-clip: text`).
