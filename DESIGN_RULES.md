@@ -9,15 +9,13 @@ The goal is not to "avoid a list of things." It is to make a deliberate choice i
 ---
 
 ### 1. Colour
-- **Colour Roles (60-30-10):** Distribute colour by role: ~60% dominant neutral surface (one grey family with consistent temperature), ~30% deep/desaturated brand colour for headings/nav/surfaces/logo, ~10% single accent for primary CTAs and key highlight (only accent may be bright/saturated).
-- Choose **ONE accent colour** (the 10%). Brand colour (30%) is structural, not decorative. Together they are the only two non-semantic chromatic hues allowed.
-- **Semantic Secondary Colours Only:** A further colour is allowed only when it carries objective functional meaning: destructive/error, success, warning. Never for variety or novelty.
-- **Accent Fill Rule:** Use accent as a fill with dark text, never as low-contrast body text. One primary CTA per view.
+- Choose **ONE accent colour**. Everything else is neutral, a single family of greys with a consistent temperature (all warm or all cool, never mixed).
+- A second colour is allowed only when it carries objective functional meaning: destructive, success, warning. Never for decorative variety.
 - **Banned:** blue→purple and indigo→violet gradients, anywhere. That means backgrounds, buttons, headings, logos, icons, borders, blurred "blobs", mesh backgrounds.
 - **Banned:** gradient text (`background-clip: text`). Headings are one solid colour.
 - **Banned:** giving each feature, category, or section its own hue. A feature grid uses the same colour and surface for every card. Colour encodes meaning; it is not decoration.
 - Do not ship a framework's default palette untouched (Tailwind indigo/violet/slate is the single most recognisable generated-site signature). Define your own tokens.
-- Accent usage target: under 10% of the visible surface. If the page looks colourful, you have overused it. In the dark theme the same proportions hold: re-derive the tokens, do not simply invert.
+- Accent usage target: under 10% of the visible surface. If the page looks colourful, you have overused it.
 
 ---
 
@@ -120,6 +118,5 @@ Before declaring any UI finished, go through every line:
 13. Is the hero headline above 56px, or any section over 96px of vertical padding?
 14. Does any element look oversized next to the text beside it?
 15. Is `window.alert()`, `window.confirm()`, or a browser default `required` popup used anywhere?
-16. Does the accent exceed about 10% of the surface, or does any third non-semantic chromatic hue appear?
 
 If a reviewer could tell this was generated in under five seconds, find the specific thing that gave it away and fix that.
